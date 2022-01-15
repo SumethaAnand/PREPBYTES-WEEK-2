@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upper-container{
+    width:50%;
+    height: 10%;
+    margin:50px auto;
+    position:relative;
+}
+.upper-container1{
+    width: 35%;
+    height: 100%;
+    padding-top: 20px;
+}
+#tasks{
+    font-weight: bold;
+    font-size:2.5rem;    
+}
+#lists{
+    font-size: 2.5rem;
+    margin-left: 5px;
+    opacity: 0.5;
+}
+.upper-container2{
+    width: 30%;
+    height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+#circle{
+    position: absolute;
+    width: 10%;
+    height:100%;
+}
+
+#addList{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top:0;
+    right:0;
+    font-size: 30px;
+    opacity: 0.5;
+    padding-top: 25px;
+}
+
+
+.div1{
+    position: absolute;
+    top:15px;
+    right: 0px;
+    font-size: 25px;
+    width: 85%;
+    text-align: left;
+    height: 15%;
+    color: darkred;
+    border-bottom: 1px solid black;
+    
+}
+.div2{
+    width: 90%;
+    height: 10%;
+    font-size: 22px;
+    color:red;
+    position: absolute;
+    text-align: right;
+    top:35%;  
+    font-weight: bold;
+    text-decoration: line-through;    
+}
+
+.div3{
+    width: 90%;
+    height:10%;
+    position:absolute;
+    top:52%;
+    text-align: left;
+    font-size: 25px;
+}
+.card1{
+    margin-top:3px;
+    border:1.5px solid red;
+    height: 45vh;
+    width:15%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px lightgrey;
+}
+.card2{
+    margin-top:3px;
+    border:1.5px solid red;
+    height: 45vh;
+    width:15%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px lightgrey;
+    
+}
+.card3{
+    margin-top:3px;
+    border:1.5px solid red;
+    height: 45vh;
+    width:15%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px gray;
+    
+}
+#check{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+.lower{    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;    
+}
+
+
+
+/******************POP-UP********************/
+.notshow{
+    filter: blur(6px);
+    -webkit-filter:blur(6px) ;
+}
+.popup{
+    position: absolute;
+    left:37%;
+    top: 30%;
+    height: 25vh;
+    width: 27%;
+    border: 1.5px solid red;
+    border-radius: 10px;
+    color: red;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px lightgray;
+    background-color: white;
+    padding: 20px;
+}
+#addnew{
+    opacity: 0.7;
+    font-size: 20px;
+}
+.popup-bar{
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 85%;
+    height: 25%;
+    border:1.5px solid red ;
+    box-shadow:1px 1px 3px lightgray;
+}
+.popup-button{
+    width: 25%;
+    height: 20%;
+    margin-top: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    left: 150px;
+    font-size: 20px;
+}
+
+/******************************MOBILE RESPONSIVENES************************************/
+
+@media(max-width:600px){
+.upper-container{
+    width: 80%;
+}
+.upper-container1{
+    width:80%;
+}
+#addList{
+    display: none;
+}
+
+.div2{
+    display: none;
+}
+.div3{
+    display: none;
+}
+.div1{
+    border: none;
+    color: lightgray;
+}
+.card1{
+    width: 90%;
+    height: 15vw;
+    margin-top:20px;
+}
+.card2{
+    width: 90%;
+    height: 15vw;
+    margin-top:20px;
+}
+.card3{
+    width: 90%;
+    height: 15vw;
+    margin-top:20px;
+}
+.popup {
+    width: 80%;
+    height: 50vw;
+    margin-top: 25px;
+    margin-left: -26%;;
+}
+.popup-button {
+    width: 25%;
+    height: 20%;
+    margin-top: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    left: 120px;
+    font-size: 20px;
+}
+}
